@@ -1,0 +1,19 @@
+.profile {
+  padding: 100px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #2c2c2c;
+  font-weight: 600;
+  &__title {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+  &__subtitle,
+  &__project  {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  & hr {
+    border: 1px solid #2c2c2c;
+  }
+}
