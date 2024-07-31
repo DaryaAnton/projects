@@ -1,0 +1,22 @@
+@import "base/reset";
+@import "base/variables";
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: $text-light;
+    background-color: $main-dark;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    max-width: 1420px;
+}
+
+// font-family: "AmaticSC", sans-serif;
+@import "blocks/header";
+@import "blocks/hero";
+@import "blocks/preloader";
+@import "blocks/footer";

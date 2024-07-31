@@ -1,0 +1,17 @@
+.footer {
+    background: url(../img/footer_bg.png) center center/cover no-repeat;
+    height: 300px;
+    width: 100%;
+    position: relative;
+
+    &__logo {
+        font-family: "AmaticSC", sans-serif;
+        font-size: 120px;
+        font-weight: 700;
+        margin: 30px 0 0 120px;
+
+        & span {
+            color: $accent-color;
+        }
+    }
+}

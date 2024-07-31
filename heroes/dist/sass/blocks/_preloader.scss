@@ -1,0 +1,51 @@
+.preloader {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    background: $main-dark;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    transition: all .3s;
+
+    &__block {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform: translateZ(0) scale(0.8);
+        backface-visibility: hidden;
+
+        & div {
+            position: absolute;
+            animation: preloader__block 1s linear infinite;
+            width: 80px;
+            height: 80px;
+            top: 50%;
+            left: 50%;
+            border-radius: 50%;
+            box-shadow: 0 2px 0 0 #98ff98;
+            transform-origin: 40px 41px;
+        }
+    }
+}
+
+@keyframes preloader__block {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    50% {
+        transform: rotate(180deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.hide {
+    display: none;
+}
