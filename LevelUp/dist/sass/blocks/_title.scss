@@ -1,0 +1,36 @@
+.title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 60px;
+  &_reviews {
+    margin-bottom: 50px;
+  }
+  &_form {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  .title {
+    font-size: 42px;
+    &_form {
+      padding-top: 70px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 32px;
+    &_reviews {
+      margin-bottom: 30px;
+    }
+  }
+}
+@media (max-width: 567px) {
+  .title {
+    font-size: 28px;
+    &_form {
+      padding-top: 50px;
+    }
+  }
+}

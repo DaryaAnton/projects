@@ -1,0 +1,100 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px 0;
+  }
+  &__title {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  &__input {
+    margin-bottom: 30px;
+    height: 40px;
+    width: 350px;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: 1px solid $main-color;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    &:focus-visible {
+      outline: 0;
+    }
+  }
+  &__tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  &__tooltiptext {
+    visibility: hidden;
+    width: 150px;
+    background-color: transparent;
+    color: $main-color;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    right: 5px;
+    border: 1px solid $accent-light-color;
+  }
+  &__pills {
+    & img {
+      width: auto;
+      height: 350px;
+    }
+  }
+}
+
+.form__tooltip .form__input:focus ~ .form__tooltiptext {
+  visibility: visible;
+}
+
+@media (max-width: 992px) {
+  .form {
+    &__wrapper {
+      margin: 50px 0;
+    }
+    &__pills {
+      & img {
+        width: auto;
+        height: 250px;
+      }
+    }
+    &__title {
+      font-size: 25px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .form {
+    &__pills {
+      & img {
+        height: 200px;
+      }
+    }
+    &__title {
+      font-size: 20px;
+    }
+    &__input {
+      width: 280px;
+    }
+  }
+}
+@media (max-width: 567px) {
+  .form {
+    &__wrapper {
+      flex-direction: column-reverse;
+    }
+    &__pills {
+      margin-bottom: 30px;
+    }
+  }
+}

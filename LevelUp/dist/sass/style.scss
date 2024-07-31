@@ -1,0 +1,49 @@
+@import "base/reset";
+@import "base/variables";
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: $main-color;
+}
+
+html {
+    scroll-behavior: smooth;
+    &.html {
+        scroll-behavior: auto;
+    }
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 960px
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 720px
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        max-width: 540px
+    }
+}
+
+@import "blocks/promo";
+@import "blocks/btn";
+@import "blocks/composition";
+@import "blocks/title";
+@import "blocks/reviews";
+@import "blocks/offer";
+@import "blocks/form";
+@import "blocks/timer";
+
