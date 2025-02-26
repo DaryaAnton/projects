@@ -1,0 +1,26 @@
+.tabs {
+  margin-top: 24px;
+  &__item:not(.active) {
+    display: none;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+  &__content {
+    margin-top: 16px;
+  }
+  &__desc {
+    width: 85%;
+    & p {
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: 8px;
+    }
+  }
+  &__subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

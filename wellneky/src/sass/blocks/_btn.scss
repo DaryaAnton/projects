@@ -1,0 +1,83 @@
+.btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  height: 36px;
+  width: 123px;
+  background-color: $color-accent;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .8s;
+  cursor: pointer;
+  &_main {
+    width: 107px;
+    & img {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+    }
+    &:hover {
+      background-color: $color-text-light;
+    }
+  }
+  &_info {
+    width: 48%;
+    display: flex;
+    align-items: center;
+    height: 48px;
+    &:first-child {
+      background-color: $color-accent-focus;
+    }
+    & img {
+      margin-left: 8px;
+    }
+    &:hover {
+      opacity: .7;
+    }
+  }
+  &_tabs {
+    margin-right: 24px;
+    padding: 8px 24px;
+    width: auto;
+    height: auto;
+    border: 1px solid $color-accent;
+    background-color: transparent;
+    color: $color-accent;
+    &:last-child {
+      margin-right: 0;
+    }
+    &.active {
+      background-color: $color-accent;
+      color: #fff;
+    }
+    &:hover {
+      background-color: rgba(11, 21, 71, .2);
+    }
+  }
+  &_recommend {
+    width: 155px;
+    height: 48px;
+    font-size: 18px;
+    line-height: 24px;
+    &:hover {
+      background-color: $color-text-light;
+    }
+  }
+  &_cart {
+    width: 40px;
+    height: 32px;
+    &:hover {
+      background-color: $color-text-light;
+    }
+  }
+  &_form {
+    width: 171px;
+    height: 48px;
+    background-color: rgba(244, 244, 244, 0.2);
+    &:hover {
+      background-color: rgba(170, 118, 124, 0.2);
+    }
+  }
+}

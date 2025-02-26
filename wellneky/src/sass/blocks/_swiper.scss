@@ -1,0 +1,42 @@
+.swiper-container {
+  display: flex;
+}
+
+.mySwiper {
+  height: 100%;
+  width: 20% !important;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.mySwiper2 {
+  height: 100%;
+  width: 80% !important;
+}
+
+.swiper {
+  width: 100%;
+  height: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+  & img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

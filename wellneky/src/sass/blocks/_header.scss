@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+    &_exit {
+      display: flex;
+      justify-content: right;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__point-link {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    gap: 5px;
+    text-decoration: none;
+    font-size: 12px;
+    color: $color-text-main;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__point-img {
+    width: 24px;
+    height: 24px;
+    &_s {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  &__logo {
+    width: 200px;
+    height: 73px;
+  }
+}
