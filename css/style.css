@@ -80,6 +80,7 @@ button {
   width: 32%;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   padding-top: 15px;
+  margin-bottom: 20px;
 }
 .profile__point a {
   text-decoration: none;
