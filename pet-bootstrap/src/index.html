@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="./js/script.js" defer></script>
+  <title>Kvestiks</title>
+</head>
+
+<body>
+
+  <header class="header d-flex align-items-center">
+
+    <div class="h-100 container-fluid container-md">
+      <div class="row h-100 d-flex align-items-center pt-1">
+
+        <div
+          class="col-4 col-md-6 d-flex justify-content-start align-items-center order-md-2 flex-row-md-reverse justify-content-md-end">
+
+          <a class="d-flex flex-column align-items-center order-md-1 header__link" href="#">
+            <img src="./img/header/person.svg" alt="person" width="24" height="24"
+              class="d-inline-block align-text-top">
+            <span class="d-none d-md-block">Заказы</span>
+          </a>
+
+          <ul class="d-none d-md-flex justify-content-md-between align-items-md-center">
+            <li class="header__point">
+              <a class="d-flex flex-column align-items-center header__link" href="#">
+                <img src="./img/header/phone.svg" alt="phone" width="24" height="24"
+                  class="d-inline-block align-text-top">
+                Контакты
+              </a>
+            </li>
+            <li class="header__point">
+              <a class="d-flex flex-column align-items-center header__link" href="#">
+                <img src="./img/header/book.svg" alt="book" width="24" height="24"
+                  class="d-inline-block align-text-top">
+                Блог
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="col-4 col-md-6 d-flex justify-content-center align-items-center order-md-1 justify-content-md-start">
+          <img class="header__logo" src="img/logo/logo.svg" alt="logo">
+        </div>
+
+        <div class="col-4 d-flex justify-content-end align-items-center d-md-none">
+
+          <button class="btn btn-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#burger-menu"
+            aria-controls="burger-menu">
+            <img src="./img/header/burger_menu.svg" alt="burger" width="24" height="24">
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="burger-menu" aria-labelledby="burger-menu-label">
+      <div class="offcanvas-header">
+        <div class="offcanvas-title" id="burger-menu-label">
+          <img class="header__logo" src="img/logo/logo.svg" alt="logo">
+        </div>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul>
+          <li>Пункт меню 1</li>
+          <li>Пункт меню 2</li>
+        </ul>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <div class="container-fluid container-lg">
+      <div class="d-none d-lg-block">
+        <nav
+          style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='14'%3E%3Cpath d='M9.506 10.85C9.646 10.5513 9.78133 10.29 9.912 10.066C10.052 9.842 10.1873 9.65533 10.318 9.506H2.156V8.918H10.318C10.1873 8.75933 10.052 8.568 9.912 8.344C9.78133 8.12 9.646 7.86333 9.506 7.574H9.996C10.584 8.25533 11.2 8.75933 11.844 9.086V9.338C11.2 9.65533 10.584 10.1593 9.996 10.85H9.506Z' fill='%23424242'/%3E%3C/svg%3E&#34;)">
+          <ol class="breadcrumb mt-lg-4">
+            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Каталог</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <section class="content">
+      <div class="container-fluid container-lg">
+        <div class="row d-flex flex-column flex-lg-row">
+
+          <div class="col-12 col-lg-9 position-relative">
+            <div class="content__info-gradient z-1 rounded"></div>
+
+            <div class="card d-flex flex-column-reverse flex-lg-row position-relative shadow rounded">
+              <div class="card-body col-12 col-lg-6 z-3 content__info-card-body">
+                <div class="row">
+                  <h1 class="text-center text-nowrap text-center text-lg-start content__info-title">Стрелы Амура, 18+
+                  </h1>
+                  <div class="col-10 col-lg-12 text-center offset-1 offset-lg-0 text-lg-start">
+                    <span class="badge content__info-tags">квест</span>
+                    <span class="badge content__info-tags">для 2 человек</span>
+                    <span class="badge content__info-tags">для дома</span>
+                    <span class="badge content__info-tags">сложность 7/10</span>
+                  </div>
+                </div>
+                <p class="card-text content__info-text text-center fs-6 text-lg-start">
+                  Романтический квест по поиску подарка для второй половинки: мужа, жены, парня или девушки. Чтобы
+                  собрать 7 стрел бога любви Амура и разыскать подарок, игроку нужно выполнить задания древних богов
+                </p>
+
+              </div>
+              <div class="col-12 col-lg-6 position-relative z-0 content__info-bg">
+                <span class="badge fw-normal content__info-lable">самый популярный</span>
+                <img class="w-100 h-100 rounded-start" src="./img/bg/bg_main.jpg" alt="cupid">
+              </div>
+            </div>
+          </div>
+
+          <div class="card d-none d-lg-block col-lg-3 shadow rounded content__sitebar">
+            <div class="card-body">
+              .
+              <div class="row d-flex flex-column">
+                <div class="col">
+                  <p class="text-center content__sitebar-info">Принимаем к оплате</p>
+                </div>
+                <div class="col mb-lg-4">
+                  <ul class="d-flex justify-content-between align-items-center">
+                    <li>
+                      <a href="#">
+                        <img src="./img/pay/sber.svg" alt="sber">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="./img/pay/mastercard.svg" alt="mastercard">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="./img/pay/visa.svg" alt="visa">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="./img/pay/mir.svg" alt="mir">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col mb-lg-4">
+                  <p class="text-center fs-6">
+                    Я из другой страны —
+                    <br>
+                    <span class="content__sitebar-accent">как оплатить?</span>
+                  </p>
+                </div>
+                <div class="col d-flex justify-content-center">
+                  <button type="button" class="btn fs-6 fw-bold content__sitebar-btn" data-type="pay">Купить квест 500
+                    ₽
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container-fluid container-lg">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="reviews__title mt-4 position-relative">Отзывы клиентов
+              <br class="d-md-none">
+              <span class="badge fs-md-4 reviews__tag">
+                <span class="d-md-none">1/</span>
+                182
+              </span>
+            </h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <!--scrollspy >= md -->
+          <div class="col-12 d-none d-md-block">
+            <div class="row card-deck">
+              <div class="col-md-4 mt-md-3 mb-md-4 card reviews__scroll">
+                <div class="card-body shadow rounded reviews__slider-card-body">
+                  <p class="reviews__slider-date">14 февраля 2024</p>
+                  <h6 class="card-subtitle mb-2 text-body-secondary fw-semibold reviews__slider-name">Светлана
+                    (2 игрока 36 лет)
+                  </h6>
+                  <div>
+                    <img src="./img/slider/star.svg" alt="star">
+                    <img src="./img/slider/star.svg" alt="star">
+                    <img src="./img/slider/star.svg" alt="star">
+                    <img src="./img/slider/star.svg" alt="star">
+                    <img src="./img/slider/star.svg" alt="star">
+                  </div>
+                  <h5 class="card-title reviews__slider-title">День святого Валентина
+                  </h5>
+                  <p class="card-text fs-6 reviews__slider-text">
+                    Понравилось, что вопросы хоть и объединены одной темой, были не похожи друг на друга. Разные
+                    страны и эпохи — есть где разгуляться фантазии. И если сначала мы пытались искать правильные
+                    ответы, то по ходу игры стало интереснее и смешнее запутать других игроков.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-4 mt-md-3 mb-md-4 card reviews__scroll">
+                <div class="card-body shadow rounded reviews__slider-card-body">
+                  <p class="reviews__slider-date">14 февраля 2024</p>
+                  <h6 class="card-subtitle mb-2 text-body-secondary fw-semibold reviews__slider-name">Светлана
+                    (2 игрока 36 лет)
+                  </h6>
+                  <div>
+                    <img src="./img/slider/star.svg" alt="star">
+                    <img src="./img/slider/star.svg" alt="star">
+                    <img src="./img/slider/star.svg" alt="star">
+                    <img src="./img/slider/star.svg" alt="star">
+                    <img src="./img/slider/star.svg" alt="star">
+                  </div>
+                  <h5 class="card-title reviews__slider-title">День святого Валентина
+                  </h5>
+                  <p class="card-text fs-6 reviews__slider-text">
+                    Понравилось, что вопросы хоть и объединены одной темой, были не похожи друг на друга. Разные
+                    страны и эпохи — есть где разгуляться фантазии. И если сначала мы пытались искать правильные
+                    ответы, то по ходу игры стало интереснее и смешнее запутать других игроков.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-4 mt-md-3 mb-md-4 card reviews__scroll">
+                <div class="card-body shadow rounded reviews__slider-card-body">
+                  <p class="reviews__slider-date">14 февраля 2024</p>
+                  <h6 class="card-subtitle mb-2 text-body-secondary fw-semibold reviews__slider-name">Светлана
+                    (2 игрока 36 лет)
+                  </h6>
+                  <div>
+                    <img src="./img/slider/star.svg" alt="star">
+                    <img src="./img/slider/star.svg" alt="star">
+                    <img src="./img/slider/star.svg" alt="star">
+                    <img src="./img/slider/star.svg" alt="star">
+                    <img src="./img/slider/star.svg" alt="star">
+                  </div>
+                  <h5 class="card-title reviews__slider-title">День святого Валентина
+                  </h5>
+                  <p class="card-text fs-6 reviews__slider-text">
+                    Понравилось, что вопросы хоть и объединены одной темой, были не похожи друг на друга. Разные
+                    страны и эпохи — есть где разгуляться фантазии. И если сначала мы пытались искать правильные
+                    ответы, то по ходу игры стало интереснее и смешнее запутать других игроков.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-4 mt-md-3 mb-md-4 card reviews__scroll">
+                <div class="card-body shadow rounded reviews__slider-card-body">
+                  <p class="reviews__slider-date">14 февраля 2024</p>
+                  <h6 class="card-subtitle mb-2 text-body-secondary fw-semibold reviews__slider-name">Светлана
+                    (2 игрока 36 лет)
+                  </h6>
+                  <div>
+                    <img src="./img/slider/star.svg" alt="star">
+                    <img src="./img/slider/star.svg" alt="star">
+                    <img src="./img/slider/star.svg" alt="star">
+                    <img src="./img/slider/star.svg" alt="star">
+                    <img src="./img/slider/star.svg" alt="star">
+                  </div>
+                  <h5 class="card-title reviews__slider-title">День святого Валентина
+                  </h5>
+                  <p class="card-text fs-6 reviews__slider-text">
+                    Понравилось, что вопросы хоть и объединены одной темой, были не похожи друг на друга. Разные
+                    страны и эпохи — есть где разгуляться фантазии. И если сначала мы пытались искать правильные
+                    ответы, то по ходу игры стало интереснее и смешнее запутать других игроков.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-4 mt-md-3 mb-md-4 card reviews__scroll">
+                <div class="card-body shadow rounded reviews__slider-card-body">
+                  <p class="reviews__slider-date">14 февраля 2024</p>
+                  <h6 class="card-subtitle mb-2 text-body-secondary fw-semibold reviews__slider-name">Светлана
+                    (2 игрока 36 лет)
+                  </h6>
+                  <div>
+                    <img src="./img/slider/star.svg" alt="star">
+                    <img src="./img/slider/star.svg" alt="star">
+                    <img src="./img/slider/star.svg" alt="star">
+                    <img src="./img/slider/star.svg" alt="star">
+                    <img src="./img/slider/star.svg" alt="star">
+                  </div>
+                  <h5 class="card-title reviews__slider-title">День святого Валентина
+                  </h5>
+                  <p class="card-text fs-6 reviews__slider-text">
+                    Понравилось, что вопросы хоть и объединены одной темой, были не похожи друг на друга. Разные
+                    страны и эпохи — есть где разгуляться фантазии. И если сначала мы пытались искать правильные
+                    ответы, то по ходу игры стало интереснее и смешнее запутать других игроков.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-4 mt-md-3 mb-md-4 card reviews__scroll">
+                <div class="card-body shadow rounded reviews__slider-card-body">
+                  <p class="reviews__slider-date">14 февраля 2024</p>
+                  <h6 class="card-subtitle mb-2 text-body-secondary fw-semibold reviews__slider-name">Светлана
+                    (2 игрока 36 лет)
+                  </h6>
+                  <div>
+                    <img src="./img/slider/star.svg" alt="star">
+                    <img src="./img/slider/star.svg" alt="star">
+                    <img src="./img/slider/star.svg" alt="star">
+                    <img src="./img/slider/star.svg" alt="star">
+                    <img src="./img/slider/star.svg" alt="star">
+                  </div>
+                  <h5 class="card-title reviews__slider-title">День святого Валентина
+                  </h5>
+                  <p class="card-text fs-6 reviews__slider-text">
+                    Понравилось, что вопросы хоть и объединены одной темой, были не похожи друг на друга. Разные
+                    страны и эпохи — есть где разгуляться фантазии. И если сначала мы пытались искать правильные
+                    ответы, то по ходу игры стало интереснее и смешнее запутать других игроков.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--slider <= md -->
+          <div class="col-12 d-block d-md-none">
+            <div id="carouselExampleIndicators" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row pt-3 pb-4">
+                    <div class="col-10 offset-1">
+                      <div class="card">
+                        <div class="card-body shadow rounded reviews__slider-card-body">
+                          <p class="reviews__slider-date">14 февраля 2024</p>
+                          <h6 class="card-subtitle mb-2 text-body-secondary fw-semibold reviews__slider-name">Светлана
+                            (2 игрока 36 лет)
+                          </h6>
+                          <div>
+                            <img src="./img/slider/star.svg" alt="star">
+                            <img src="./img/slider/star.svg" alt="star">
+                            <img src="./img/slider/star.svg" alt="star">
+                            <img src="./img/slider/star.svg" alt="star">
+                            <img src="./img/slider/star.svg" alt="star">
+                          </div>
+                          <h5 class="card-title reviews__slider-title">День святого Валентина
+                          </h5>
+                          <p class="card-text fs-6 reviews__slider-text">
+                            Понравилось, что вопросы хоть и объединены одной темой, были не похожи друг на друга. Разные
+                            страны и эпохи — есть где разгуляться фантазии. И если сначала мы пытались искать правильные
+                            ответы, то по ходу игры стало интереснее и смешнее запутать других игроков.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="row pt-3 pb-4">
+                    <div class="col-10 offset-1">
+                      <div class="card">
+                        <div class="card-body shadow rounded reviews__slider-card-body">
+                          <p class="reviews__slider-date">14 февраля 2024</p>
+                          <h6 class="card-subtitle mb-2 text-body-secondary fw-semibold reviews__slider-name">Светлана
+                            (2 игрока 36 лет)
+                          </h6>
+                          <div>
+                            <img src="./img/slider/star.svg" alt="star">
+                            <img src="./img/slider/star.svg" alt="star">
+                            <img src="./img/slider/star.svg" alt="star">
+                            <img src="./img/slider/star.svg" alt="star">
+                            <img src="./img/slider/star.svg" alt="star">
+                          </div>
+                          <h5 class="card-title reviews__slider-title">День святого Валентина
+                          </h5>
+                          <p class="card-text fs-6 reviews__slider-text">
+                            Понравилось, что вопросы хоть и объединены одной темой, были не похожи друг на друга. Разные
+                            страны и эпохи — есть где разгуляться фантазии. И если сначала мы пытались искать правильные
+                            ответы, то по ходу игры стало интереснее и смешнее запутать других игроков.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="row pt-3 pb-4">
+                    <div class="col-10 offset-1">
+                      <div class="card">
+                        <div class="card-body shadow rounded reviews__slider-card-body">
+                          <p class="reviews__slider-date">14 февраля 2024</p>
+                          <h6 class="card-subtitle mb-2 text-body-secondary fw-semibold reviews__slider-name">Светлана
+                            (2 игрока 36 лет)
+                          </h6>
+                          <div>
+                            <img src="./img/slider/star.svg" alt="star">
+                            <img src="./img/slider/star.svg" alt="star">
+                            <img src="./img/slider/star.svg" alt="star">
+                            <img src="./img/slider/star.svg" alt="star">
+                            <img src="./img/slider/star.svg" alt="star">
+                          </div>
+                          <h5 class="card-title reviews__slider-title">День святого Валентина
+                          </h5>
+                          <p class="card-text fs-6 reviews__slider-text">
+                            Понравилось, что вопросы хоть и объединены одной темой, были не похожи друг на друга. Разные
+                            страны и эпохи — есть где разгуляться фантазии. И если сначала мы пытались искать правильные
+                            ответы, то по ходу игры стало интереснее и смешнее запутать других игроков.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button class="carousel-control-prev d-none" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next d-none" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+          <div class="col-12 d-flex justify-content-center align-items-center">
+            <button type="button" class="btn fs-6 fw-bold content__sitebar-btn content__sitebar-btn_reviews"
+              data-type="reviews">Смотреть все отзывы
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="footer d-md-none">
+      <div class="container-fluid container-lg">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body shadow rounded d-flex justify-content-center align-items-center">
+                <button type="button" class="btn fs-6 fw-bold content__sitebar-btn content__sitebar-btn_footer"
+                  data-type="pay">Купить квест 500₽
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

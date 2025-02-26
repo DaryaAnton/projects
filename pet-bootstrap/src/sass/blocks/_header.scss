@@ -1,0 +1,29 @@
+.header {
+  height: 2.75rem;
+  @media (min-width: 992px) {
+    height: 3.5rem;
+  }
+  &__point {
+    margin-right: 2rem;
+  }
+  &__link {
+    font-weight: 600;
+    font-size: 0.625rem;
+    color: $color-link;
+  }
+  &__logo {
+    @media (min-width: 992px) {
+      height: 2.5rem;
+      width: 9.5rem;
+    }
+  }
+}
+
+.offcanvas {
+  width: 16rem;
+}
+
+.offcanvas-body {
+  padding: 1.5rem;
+}
+

@@ -1,0 +1,85 @@
+.content {
+  &__info {
+    &-lable {
+      position: absolute;
+      top: 3%;
+      left: 3%;
+      z-index: 5;
+      background-color: rgba(255, 255, 255, 0.6);
+      color: $color-link;
+      font-size: 0.625rem;
+      @media (min-width: 992px) {
+        left: auto;
+        right: 3%;
+      }
+    }
+    &-tags {
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-bottom: 0.375rem;
+      background-color: rgba(0, 0, 0, 0.1);
+      color: $color-link;
+    }
+    &-text {
+      margin: 1.125rem 0 1.75rem 0;
+      text-wrap: balance;
+      justify-content: space-around;
+    }
+    &-gradient{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 0 12px;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to top, #ffffff 20%, #ffffff 36%, rgba(255, 255, 255, 0) 55%);
+        @media (min-width: 992px) {
+          padding: 0;
+          background-image: linear-gradient(to right, #ffffff 20%, #ffffff 50%, rgba(255, 255, 255, 0) 72%);
+        }
+    }
+    &-card-body {
+      padding-bottom: 2rem;
+    }
+    &-title {
+      font-weight: 800;
+      margin: 1rem 0 1.125rem 0;
+      @media (min-width: 992px) {
+        margin: 2rem 0 1.1875rem 0;
+      }
+    }
+  }
+
+  &__sitebar {
+    height: fit-content;
+    &-btn {
+      background-color: $accent-color;
+      color: #ffffff;
+      height: 3.25rem;
+      &_reviews {
+        width: 83%;
+        margin: 1.75rem 0 1.5rem 0;
+      }
+      &_footer {
+        width: 87%;
+      }
+      &:hover {
+        background-color: $color-link;
+        color: #ffffff;
+      }
+    }
+    &-accent {
+      color: $accent-color;
+    }
+    &-info {
+      font-size: 0.8125rem;
+      color: $color-link;
+      opacity: .8;
+    }
+  }
+
+}
+.card {
+  border: none;
+}
