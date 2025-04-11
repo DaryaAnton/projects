@@ -92,6 +92,8 @@ button {
 .profile__point a:hover {
   color: #68a068;
 }
+.profile__point_dark {
+  background: #282829;
 .profile__wrapper {
   height: 350px;
   margin-top: 20px;
