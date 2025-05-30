@@ -79,3 +79,13 @@
         }
     }
 }
+
+@media (max-width: 710px) {
+    .hero {
+        padding: 15px;
+        &__card {
+            width: 250px;
+            height: 380px;
+        }
+    }
+}
